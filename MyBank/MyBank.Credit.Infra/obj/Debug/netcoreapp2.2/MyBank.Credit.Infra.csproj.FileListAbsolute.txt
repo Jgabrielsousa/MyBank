@@ -1,0 +1,14 @@
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\bin\Debug\netcoreapp2.2\MyBank.Credit.Infra.deps.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\bin\Debug\netcoreapp2.2\MyBank.Credit.Infra.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\bin\Debug\netcoreapp2.2\MyBank.Credit.Infra.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\obj\Debug\netcoreapp2.2\MyBank.Credit.Infra.csproj.CoreCompileInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\obj\Debug\netcoreapp2.2\MyBank.Credit.Infra.AssemblyInfoInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\obj\Debug\netcoreapp2.2\MyBank.Credit.Infra.AssemblyInfo.cs
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\obj\Debug\netcoreapp2.2\MyBank.Credit.Infra.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\obj\Debug\netcoreapp2.2\MyBank.Credit.Infra.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\bin\Debug\netcoreapp2.2\MyBank.Credit.Domain.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\bin\Debug\netcoreapp2.2\MyBank.Credit.Domain.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\obj\Debug\netcoreapp2.2\MyBank.Credit.Infra.csprojAssemblyReference.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Credit.Infra\obj\Debug\netcoreapp2.2\MyBank.Credit.Infra.csproj.CopyComplete

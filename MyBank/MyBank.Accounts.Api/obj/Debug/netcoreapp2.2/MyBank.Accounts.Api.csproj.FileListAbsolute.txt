@@ -1,0 +1,14 @@
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp2.2\MyBank.Accounts.Api.deps.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp2.2\MyBank.Accounts.Api.runtimeconfig.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp2.2\MyBank.Accounts.Api.runtimeconfig.dev.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp2.2\MyBank.Accounts.Api.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp2.2\MyBank.Accounts.Api.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.csprojAssemblyReference.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.csproj.CoreCompileInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.RazorAssemblyInfo.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.RazorAssemblyInfo.cs
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.AssemblyInfoInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.AssemblyInfo.cs
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.RazorTargetAssemblyInfo.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp2.2\MyBank.Accounts.Api.pdb

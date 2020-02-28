@@ -1,0 +1,14 @@
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\bin\Debug\netcoreapp2.2\MyBank.Debit.Api.deps.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\bin\Debug\netcoreapp2.2\MyBank.Debit.Api.runtimeconfig.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\bin\Debug\netcoreapp2.2\MyBank.Debit.Api.runtimeconfig.dev.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\bin\Debug\netcoreapp2.2\MyBank.Debit.Api.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\bin\Debug\netcoreapp2.2\MyBank.Debit.Api.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.csprojAssemblyReference.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.csproj.CoreCompileInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.RazorAssemblyInfo.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.RazorAssemblyInfo.cs
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.AssemblyInfoInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.AssemblyInfo.cs
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.RazorTargetAssemblyInfo.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Api\obj\Debug\netcoreapp2.2\MyBank.Debit.Api.pdb

@@ -1,0 +1,16 @@
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\obj\Debug\netcoreapp2.2\MyBank.Transfers.Infra.csprojAssemblyReference.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\obj\Debug\netcoreapp2.2\MyBank.Transfers.Infra.csproj.CoreCompileInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\obj\Debug\netcoreapp2.2\MyBank.Transfers.Infra.AssemblyInfoInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\obj\Debug\netcoreapp2.2\MyBank.Transfers.Infra.AssemblyInfo.cs
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Transfers.Infra.deps.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Transfers.Infra.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Transfers.Domain.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Transfers.Domain.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\obj\Debug\netcoreapp2.2\MyBank.Transfers.Infra.csproj.CopyComplete
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Transfers.Infra.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Infra.Data.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Infra.Data.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\obj\Debug\netcoreapp2.2\MyBank.Transfers.Infra.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Infra\obj\Debug\netcoreapp2.2\MyBank.Transfers.Infra.pdb

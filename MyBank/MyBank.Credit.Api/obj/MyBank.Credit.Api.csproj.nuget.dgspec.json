@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Api\\MyBank.Credit.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Api\\MyBank.Credit.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Api\\MyBank.Credit.Api.csproj",
+        "projectName": "MyBank.Credit.Api",
+        "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Api\\MyBank.Credit.Api.csproj",
+        "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
+        "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Domain\\MyBank.Credit.Domain.csproj": {
+                "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Domain\\MyBank.Credit.Domain.csproj"
+              },
+              "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Infra\\MyBank.Credit.Infra.csproj": {
+                "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Infra\\MyBank.Credit.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Domain\\MyBank.Credit.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Domain\\MyBank.Credit.Domain.csproj",
+        "projectName": "MyBank.Credit.Domain",
+        "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Domain\\MyBank.Credit.Domain.csproj",
+        "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
+        "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
+                "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Infra\\MyBank.Credit.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Infra\\MyBank.Credit.Infra.csproj",
+        "projectName": "MyBank.Credit.Infra",
+        "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Infra\\MyBank.Credit.Infra.csproj",
+        "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
+        "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Domain\\MyBank.Credit.Domain.csproj": {
+                "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Domain\\MyBank.Credit.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
+        "projectName": "MyBank.Shared.Domain",
+        "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
+        "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
+        "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

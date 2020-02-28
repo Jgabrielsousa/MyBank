@@ -1,0 +1,14 @@
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\bin\Debug\netcoreapp2.2\MyBank.Debit.Test.deps.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\bin\Debug\netcoreapp2.2\MyBank.Debit.Test.runtimeconfig.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\bin\Debug\netcoreapp2.2\MyBank.Debit.Test.runtimeconfig.dev.json
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\bin\Debug\netcoreapp2.2\MyBank.Debit.Test.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\bin\Debug\netcoreapp2.2\MyBank.Debit.Test.pdb
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\obj\Debug\netcoreapp2.2\MyBank.Debit.Test.csprojAssemblyReference.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\obj\Debug\netcoreapp2.2\MyBank.Debit.Test.csproj.CoreCompileInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\obj\Debug\netcoreapp2.2\MyBank.Debit.Test.AssemblyInfoInputs.cache
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\obj\Debug\netcoreapp2.2\MyBank.Debit.Test.AssemblyInfo.cs
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\obj\Debug\netcoreapp2.2\MyBank.Debit.Test.dll
+C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Test\obj\Debug\netcoreapp2.2\MyBank.Debit.Test.pdb

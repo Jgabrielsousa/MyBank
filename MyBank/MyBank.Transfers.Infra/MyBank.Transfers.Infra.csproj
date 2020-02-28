@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyBank.Infra.Data\MyBank.Infra.Data.csproj" />
+    <ProjectReference Include="..\MyBank.Shared.Domain\MyBank.Shared.Domain.csproj" />
+    <ProjectReference Include="..\MyBank.Transfers.Domain\MyBank.Transfers.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
