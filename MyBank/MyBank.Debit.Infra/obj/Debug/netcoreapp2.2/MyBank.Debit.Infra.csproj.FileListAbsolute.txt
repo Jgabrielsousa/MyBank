@@ -1,8 +1,0 @@
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Infra\bin\Debug\netcoreapp2.2\MyBank.Debit.Infra.deps.json
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Infra\bin\Debug\netcoreapp2.2\MyBank.Debit.Infra.dll
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Infra\bin\Debug\netcoreapp2.2\MyBank.Debit.Infra.pdb
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Infra\obj\Debug\netcoreapp2.2\MyBank.Debit.Infra.csproj.CoreCompileInputs.cache
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Infra\obj\Debug\netcoreapp2.2\MyBank.Debit.Infra.AssemblyInfoInputs.cache
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Infra\obj\Debug\netcoreapp2.2\MyBank.Debit.Infra.AssemblyInfo.cs
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Infra\obj\Debug\netcoreapp2.2\MyBank.Debit.Infra.dll
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Infra\obj\Debug\netcoreapp2.2\MyBank.Debit.Infra.pdb

@@ -1,8 +1,0 @@
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Domain\bin\Debug\netcoreapp2.2\MyBank.Debit.Domain.deps.json
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Domain\bin\Debug\netcoreapp2.2\MyBank.Debit.Domain.dll
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Domain\bin\Debug\netcoreapp2.2\MyBank.Debit.Domain.pdb
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Domain\obj\Debug\netcoreapp2.2\MyBank.Debit.Domain.csproj.CoreCompileInputs.cache
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Domain\obj\Debug\netcoreapp2.2\MyBank.Debit.Domain.AssemblyInfoInputs.cache
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Domain\obj\Debug\netcoreapp2.2\MyBank.Debit.Domain.AssemblyInfo.cs
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Domain\obj\Debug\netcoreapp2.2\MyBank.Debit.Domain.dll
-C:\Labs\DotNet\MyBank\MyBank\MyBank.Debit.Domain\obj\Debug\netcoreapp2.2\MyBank.Debit.Domain.pdb

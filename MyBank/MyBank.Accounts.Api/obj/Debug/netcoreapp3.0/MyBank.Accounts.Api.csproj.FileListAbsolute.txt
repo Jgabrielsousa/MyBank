@@ -1,7 +1,3 @@
-C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.csprojAssemblyReference.cache
-C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.AssemblyInfoInputs.cache
-C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.AssemblyInfo.cs
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\appsettings.json
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -38,7 +34,11 @@ C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\MyB
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\MyBank.Accounts.Domain.pdb
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\MyBank.Accounts.Infra.pdb
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\MyBank.Shared.Domain.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.csprojAssemblyReference.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.AssemblyInfoInputs.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.AssemblyInfo.cs
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.RazorTargetAssemblyInfo.cache
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.csproj.CopyComplete
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.MvcApplicationPartsAssemblyInfo.cache

@@ -1,6 +1,3 @@
-C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.csprojAssemblyReference.cache
-C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.AssemblyInfoInputs.cache
-C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.AssemblyInfo.cs
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\appsettings.json
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -124,6 +121,9 @@ C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\M
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\MyBank.Accounts.Domain.pdb
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\MyBank.Accounts.Infra.pdb
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\MyBank.Shared.Domain.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.csprojAssemblyReference.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.AssemblyInfoInputs.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.AssemblyInfo.cs
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.csproj.CopyComplete
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.pdb

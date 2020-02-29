@@ -1,0 +1,9 @@
+bin/
+obj/
+Debug/
+*.vspscc
+MyBank/.vs/
+*.dbmdl
+*.jfm
+
+
