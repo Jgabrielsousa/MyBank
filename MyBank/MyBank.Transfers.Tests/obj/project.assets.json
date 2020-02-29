@@ -2297,25 +2297,22 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "MyBank.Infra.Data/1.0.0": {
+      "MyBank.Infra.CrossCutting/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "3.1.2",
-          "MyBank.Shared.Domain": "1.0.0"
-        },
         "compile": {
-          "bin/placeholder/MyBank.Infra.Data.dll": {}
+          "bin/placeholder/MyBank.Infra.CrossCutting.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MyBank.Infra.Data.dll": {}
+          "bin/placeholder/MyBank.Infra.CrossCutting.dll": {}
         }
       },
       "MyBank.Shared.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "FluentValidation": "8.6.1"
+          "FluentValidation": "8.6.1",
+          "MyBank.Infra.CrossCutting": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MyBank.Shared.Domain.dll": {}
@@ -2328,7 +2325,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.2",
           "MyBank.Transfers.Domain": "1.0.0",
           "MyBank.Transfers.Infra": "1.0.0"
         },
@@ -2344,8 +2340,9 @@
       },
       "MyBank.Transfers.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "MyBank.Infra.CrossCutting": "1.0.0",
           "MyBank.Shared.Domain": "1.0.0"
         },
         "compile": {
@@ -2357,9 +2354,9 @@
       },
       "MyBank.Transfers.Infra/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "MyBank.Infra.Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.2",
           "MyBank.Shared.Domain": "1.0.0",
           "MyBank.Transfers.Domain": "1.0.0"
         },
@@ -2537,7 +2534,6 @@
       "path": "microsoft.csharp/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3391,7 +3387,6 @@
       "path": "system.collections/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3975,7 +3970,6 @@
       "path": "system.diagnostics.debug/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4420,7 +4414,6 @@
       "path": "system.globalization/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4565,7 +4558,6 @@
       "path": "system.io/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4829,7 +4821,6 @@
       "path": "system.linq/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4901,7 +4892,6 @@
       "path": "system.linq.expressions/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5287,7 +5277,6 @@
       "path": "system.reflection/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5463,7 +5452,6 @@
       "path": "system.reflection.extensions/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5646,7 +5634,6 @@
       "path": "system.resources.resourcemanager/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5703,7 +5690,6 @@
       "path": "system.runtime/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5820,7 +5806,6 @@
       "path": "system.runtime.extensions/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5938,7 +5923,6 @@
       "path": "system.runtime.interopservices/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6201,7 +6185,6 @@
       "path": "system.runtime.serialization.primitives/4.1.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6576,7 +6559,6 @@
       "path": "system.text.encoding.extensions/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6745,7 +6727,6 @@
       "path": "system.threading/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -7489,10 +7470,10 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "MyBank.Infra.Data/1.0.0": {
+    "MyBank.Infra.CrossCutting/1.0.0": {
       "type": "project",
-      "path": "../MyBank.Infra.Data/MyBank.Infra.Data.csproj",
-      "msbuildProject": "../MyBank.Infra.Data/MyBank.Infra.Data.csproj"
+      "path": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj",
+      "msbuildProject": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj"
     },
     "MyBank.Shared.Domain/1.0.0": {
       "type": "project",

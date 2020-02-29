@@ -16,29 +16,37 @@ namespace MyBank.Transfers.Infra.Repository
        
         public FinancialControlRepository(TransfersDbContext context) : base(context)
         {
-            context.Add(new FinancialControl()
-            {
-                Id = 1,
-                Value = 100,
-                Type = "C",
-                AccountId = 1
-            });
-            context.Add(new FinancialControl()
-            {
-                Id = 2,
-                Value = 100,
-                Type = "C",
-                AccountId = 1
-            });
-            context.Add(new FinancialControl()
-            {
-                Id = 3,
-                Value = 50,
-                Type = "D",
-                AccountId = 1
-            });
 
-            context.SaveChanges();
+            try
+            {
+                context.Add(new FinancialControl()
+                {
+                    Id = 1,
+                    Value = 100,
+                    Type = "C",
+                    AccountId = 1
+                });
+                context.Add(new FinancialControl()
+                {
+                    Id = 2,
+                    Value = 100,
+                    Type = "C",
+                    AccountId = 1
+                });
+                context.Add(new FinancialControl()
+                {
+                    Id = 3,
+                    Value = 50,
+                    Type = "D",
+                    AccountId = 1
+                });
+
+                context.SaveChanges();
+            }
+            catch (Exception)
+            {
+            }
+            
 
         }
 

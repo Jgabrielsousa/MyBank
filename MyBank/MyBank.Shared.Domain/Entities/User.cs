@@ -20,11 +20,12 @@ namespace MyBank.Shared.Domain.Entities
 
         public override bool Valid()
         {
-            RuleFor(x => x.Name)
-                 .NotEmpty().WithMessage("Nome precisa ser fornecido ")
-                 .Length(4, 200).WithMessage("Nome precisa ter entre 4 e 200 caracteres");
-            ValidationResult = Validate(this);
-            return ValidationResult.IsValid;
+            //RuleFor(x => x.Name)
+            //     .NotEmpty().WithMessage("Nome precisa ser fornecido ")
+            //     .Length(4, 200).WithMessage("Nome precisa ter entre 4 e 200 caracteres");
+            //ValidationResult = Validate(this);
+            //return ValidationResult.IsValid;
+            return true;
 
         }
     }

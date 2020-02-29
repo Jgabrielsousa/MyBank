@@ -23,8 +23,8 @@ namespace MyBank.Accounts.Infra.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Account>().Ignore(c => c.ValidationResult);
-            modelBuilder.Entity<FinancialControl>().Ignore(o => o.ValidationResult);
+           // modelBuilder.Entity<Account>().Ignore(c => c.ValidationResult);
+           // modelBuilder.Entity<FinancialControl>().Ignore(o => o.ValidationResult);
 
             modelBuilder.Entity<Account>().HasOne(c => c.Users).WithMany(q => q.Accounts);
             modelBuilder.Entity<FinancialControl>().HasOne(c => c.Accounts).WithMany(q => q.FinancialControl);

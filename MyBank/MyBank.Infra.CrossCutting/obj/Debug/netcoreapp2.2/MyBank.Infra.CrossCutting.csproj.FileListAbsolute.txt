@@ -10,8 +10,8 @@ C:\Labs\DotNet\MyBank\MyBank\MyBank.Infra.CrossCutting\obj\Debug\netcoreapp2.2\M
 C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\bin\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.deps.json
 C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\bin\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\bin\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.pdb
-C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.csprojAssemblyReference.cache
 C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.AssemblyInfoInputs.cache
 C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.AssemblyInfo.cs
 C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.csprojAssemblyReference.cache

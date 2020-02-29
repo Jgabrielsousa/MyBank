@@ -23,3 +23,5 @@ C:\playground\labs\MyBank\MyBank\MyBank.Account.Infra\obj\Debug\netcoreapp2.2\My
 C:\playground\labs\MyBank\MyBank\MyBank.Account.Infra\obj\Debug\netcoreapp2.2\MyBank.Accounts.Infra.csproj.CopyComplete
 C:\playground\labs\MyBank\MyBank\MyBank.Account.Infra\obj\Debug\netcoreapp2.2\MyBank.Accounts.Infra.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Account.Infra\obj\Debug\netcoreapp2.2\MyBank.Accounts.Infra.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Infra\bin\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Infra\bin\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.pdb

@@ -14,7 +14,7 @@ namespace MyBank.Shared.Domain.Entities
 
         public User Users { get; set; }
         public ICollection<FinancialControl> FinancialControl { get; set; }
-       
+
 
         public override bool Valid()
         {

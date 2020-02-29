@@ -1,8 +1,10 @@
-﻿using MyBank.Accounts.Domain.Interfaces.Repository;
+﻿using MyBank.Accounts.Domain.Dtos;
+using MyBank.Accounts.Domain.Interfaces.Repository;
 using MyBank.Accounts.Domain.Interfaces.Services;
 using MyBank.Shared.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace MyBank.Accounts.Domain.Services
@@ -28,6 +30,7 @@ namespace MyBank.Accounts.Domain.Services
         {
             return _repo.GetAll();
         }
+        
 
         public void Remove(Account entidade)
         {
@@ -41,6 +44,15 @@ namespace MyBank.Accounts.Domain.Services
         public void Dispose()
         {
 
+        }
+
+        public IEnumerable<AccountDto> GetAllDto()
+        {
+            var lista = new List<AccountDto>();
+            lista.Add(new AccountDto() { Balance = 1, FinancialControlId = 1, UserId = 1 });
+            lista.Add(new AccountDto() { Balance = 2, FinancialControlId = 2, UserId = 2 });
+            lista.Add(new AccountDto() { Balance = 3, FinancialControlId = 3, UserId = 3 });
+            return lista;
         }
     }
 }

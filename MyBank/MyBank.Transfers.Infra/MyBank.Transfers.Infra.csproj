@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyBank.Infra.Data\MyBank.Infra.Data.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MyBank.Shared.Domain\MyBank.Shared.Domain.csproj" />
     <ProjectReference Include="..\MyBank.Transfers.Domain\MyBank.Transfers.Domain.csproj" />
   </ItemGroup>

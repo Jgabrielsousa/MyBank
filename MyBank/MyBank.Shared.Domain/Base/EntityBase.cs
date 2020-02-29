@@ -7,10 +7,10 @@ using FluentValidation.Results;
 
 namespace MyBank.Shared.Domain.Base
 {
-    public abstract class EntityBase<T> : AbstractValidator<T>  where T : EntityBase<T>
+    public abstract class EntityBase<T> where T : EntityBase<T>
     {
         public int Id { get; set; }
-       
+
         [NotMapped]
         public ValidationResult ValidationResult { get; protected set; }
         public EntityBase()

@@ -12,21 +12,30 @@ namespace MyBank.Accounts.Infra.Repository
     {
         public AccountRepository(AccountDbContext context) : base(context)
         {
-            context.Add(new Account()
+            try
             {
-                Id = 1,
-                UserId = 1,
-                Balance = 100,
-                FinancialControlId = 1
-            });
-            context.Add(new Account()
+                context.Add(new Account()
+                {
+                    Id = 1,
+                    UserId = 1,
+                    Balance = 100,
+                    FinancialControlId = 1
+                });
+                context.Add(new Account()
+                {
+                    Id = 2,
+                    UserId = 2,
+                    Balance = 200,
+                    FinancialControlId = 2
+                });
+                context.SaveChanges();
+            }
+            catch (Exception)
             {
-                Id = 2,
-                UserId = 2,
-                Balance = 200,
-                FinancialControlId = 2
-            });
-            context.SaveChanges();
+
+                
+            }
+            
         }
 
        

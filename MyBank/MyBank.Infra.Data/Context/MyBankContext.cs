@@ -18,7 +18,7 @@ namespace MyBank.Infra.Data.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>().Ignore(o => o.ValidationResult);
+           // modelBuilder.Entity<User>().Ignore(o => o.ValidationResult);
         }
 
         public DbSet<User> Users { get; set; }

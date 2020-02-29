@@ -21,3 +21,5 @@ C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.csproj.CopyComplete
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Infra.CrossCutting.pdb

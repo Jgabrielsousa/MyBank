@@ -25,7 +25,14 @@ namespace MyBank.Accounts.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Bootstrap.RegisterServices(services);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddMvc(option => option.EnableEndpointRouting = false);
+            //services.AddControllers(options =>
+            //{
+            //    options.RespectBrowserAcceptHeader = true; // false by default
+            //});
+            //services.AddControllers().AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +49,16 @@ namespace MyBank.Accounts.Api
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            // app.UseMvc();
+
+            app.UseRouting();
+            app.UseCors();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+            });
+
         }
     }
 }
