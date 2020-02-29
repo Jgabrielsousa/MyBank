@@ -10,3 +10,14 @@ C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyB
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.dll
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.pdb
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.csproj.CopyComplete
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Transfers.Domain.deps.json
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Transfers.Domain.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Transfers.Domain.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.csprojAssemblyReference.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.AssemblyInfoInputs.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.AssemblyInfo.cs
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.csproj.CopyComplete
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Domain\obj\Debug\netcoreapp2.2\MyBank.Transfers.Domain.pdb

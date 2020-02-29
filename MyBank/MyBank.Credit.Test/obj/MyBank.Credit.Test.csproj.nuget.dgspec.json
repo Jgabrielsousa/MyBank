@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Test\\MyBank.Credit.Test.csproj": {}
+    "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Credit.Test\\MyBank.Credit.Test.csproj": {}
   },
   "projects": {
-    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Test\\MyBank.Credit.Test.csproj": {
+    "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Credit.Test\\MyBank.Credit.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Test\\MyBank.Credit.Test.csproj",
+        "projectUniqueName": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Credit.Test\\MyBank.Credit.Test.csproj",
         "projectName": "MyBank.Credit.Test",
-        "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Test\\MyBank.Credit.Test.csproj",
-        "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
-        "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Credit.Test\\obj\\",
+        "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Credit.Test\\MyBank.Credit.Test.csproj",
+        "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+        "outputPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Credit.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -30,8 +32,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj": {
-                "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj"
+              "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj": {
+                "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj"
               }
             }
           }
@@ -77,28 +79,36 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj": {
+    "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj",
+        "projectUniqueName": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj",
         "projectName": "MyBank.Infra.Data",
-        "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
-        "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.Data\\obj\\",
+        "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+        "outputPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -110,8 +120,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
-                "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj"
+              "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
+                "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj"
               }
             }
           }
@@ -137,28 +147,36 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj": {
+    "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj",
+        "projectUniqueName": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj",
         "projectName": "MyBank.Infra.IoC",
-        "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj",
-        "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
-        "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.IoC\\obj\\",
+        "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+        "outputPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -170,11 +188,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj": {
-                "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj"
+              "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj": {
+                "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj"
               },
-              "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
-                "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj"
+              "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
+                "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj"
               }
             }
           }
@@ -208,28 +226,36 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
+    "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
+        "projectUniqueName": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
         "projectName": "MyBank.Shared.Domain",
-        "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
-        "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
-        "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\obj\\",
+        "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
+        "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+        "outputPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -264,10 +290,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

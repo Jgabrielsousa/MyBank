@@ -814,24 +814,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jgsouza\\.nuget\\packages\\": {},
+    "C:\\Users\\Joao\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
+      "projectUniqueName": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
       "projectName": "MyBank.Shared.Domain",
-      "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
-      "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
-      "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\obj\\",
+      "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj",
+      "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+      "outputPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -866,10 +869,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

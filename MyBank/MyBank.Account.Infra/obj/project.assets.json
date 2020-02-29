@@ -470,6 +470,19 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
+      "MyBank.Accounts.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "MyBank.Shared.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBank.Accounts.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBank.Accounts.Domain.dll": {}
+        }
+      },
       "MyBank.Shared.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -1439,6 +1452,11 @@
         "version.txt"
       ]
     },
+    "MyBank.Accounts.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MyBank.Account.Domain/MyBank.Accounts.Domain.csproj",
+      "msbuildProject": "../MyBank.Account.Domain/MyBank.Accounts.Domain.csproj"
+    },
     "MyBank.Shared.Domain/1.0.0": {
       "type": "project",
       "path": "../MyBank.Shared.Domain/MyBank.Shared.Domain.csproj",
@@ -1450,28 +1468,32 @@
       "FluentValidation >= 8.6.1",
       "Microsoft.EntityFrameworkCore.InMemory >= 3.1.2",
       "Microsoft.NETCore.App >= 2.2.0",
+      "MyBank.Accounts.Domain >= 1.0.0",
       "MyBank.Shared.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jgsouza\\.nuget\\packages\\": {},
+    "C:\\Users\\Joao\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Account.Infra\\MyBank.Accounts.Infra.csproj",
+      "projectUniqueName": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Infra\\MyBank.Accounts.Infra.csproj",
       "projectName": "MyBank.Accounts.Infra",
-      "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Account.Infra\\MyBank.Accounts.Infra.csproj",
-      "packagesPath": "C:\\Users\\jgsouza\\.nuget\\packages\\",
-      "outputPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Account.Infra\\obj\\",
+      "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Infra\\MyBank.Accounts.Infra.csproj",
+      "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+      "outputPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jgsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -1483,8 +1505,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
-              "projectPath": "C:\\Labs\\DotNet\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj"
+            "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Domain\\MyBank.Accounts.Domain.csproj": {
+              "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Domain\\MyBank.Accounts.Domain.csproj"
+            },
+            "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
+              "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj"
             }
           }
         }
@@ -1514,10 +1539,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

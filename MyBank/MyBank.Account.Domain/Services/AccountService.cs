@@ -7,22 +7,12 @@ using System.Text;
 
 namespace MyBank.Accounts.Domain.Services
 {
-    public class TransferService : IAccountService
+    public class AccountService : IAccountService
     {
         private readonly IAccountRepository _repo;
-        public TransferService(IAccountRepository repo)
+        public AccountService(IAccountRepository repo)
         {
             _repo = repo;
-        }
-
-        public void Credit(int value, int OriginAccountId, int DestinyAccountId)
-        {
-            _repo.Credit(value, OriginAccountId, DestinyAccountId);
-        }
-
-        public void Debt(int value, int OriginAccountId, int DestinyAccountId)
-        {
-            _repo.Debt(value, OriginAccountId, DestinyAccountId);
         }
         public Account Add(Account entidade)
         {

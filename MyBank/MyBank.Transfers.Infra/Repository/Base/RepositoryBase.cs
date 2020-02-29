@@ -11,14 +11,14 @@ namespace MyBank.Transfers.Infra.Repository.Base
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : EntityBase<T>
     {
-        protected readonly TransfersDbContext contexto;
+        protected readonly TransfersDbContext context;
         protected DbSet<T> DbSet;
 
 
-        public RepositoryBase(TransfersDbContext _contexto)
+        public RepositoryBase(TransfersDbContext _context)
         {
-            contexto = _contexto;
-            DbSet = contexto.Set<T>();
+            context = _context;
+            DbSet = context.Set<T>();
         }
 
 

@@ -1,4 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using MyBank.Accounts.Domain.Interfaces.Repository;
+using MyBank.Accounts.Domain.Interfaces.Services;
+using MyBank.Accounts.Domain.Services;
+using MyBank.Accounts.Infra.Context;
+using MyBank.Accounts.Infra.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +15,9 @@ namespace MyBank.Accounts.Api
     {
         public static void RegisterServices(IServiceCollection services)
         {
-            //services.AddScoped<ICreditService, CreditService>();
-            //services.AddScoped<ICreditRepository, CreditRepository>();
+            services.AddScoped<AccountDbContext>();
+            services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
         }
     }
 }

@@ -8,7 +8,6 @@ namespace MyBank.Accounts.Domain.Interfaces.Services
 {
     public interface IAccountService : IServiceBase<Account>
     {
-        void Credit(int value, int OriginAccountId, int DestinyAccountId);
-        void Debt(int value, int OriginAccountId, int DestinyAccountId);
+   
     }
 }

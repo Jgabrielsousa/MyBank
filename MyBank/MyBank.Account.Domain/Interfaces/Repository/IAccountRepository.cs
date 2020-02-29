@@ -8,7 +8,6 @@ namespace MyBank.Accounts.Domain.Interfaces.Repository
 {
     public interface IAccountRepository : IRepositoryBase<Account>
     {
-        void Credit(int value, int OriginAccountId, int DestinyAccountId);
-        void Debt(int value, int OriginAccountId, int DestinyAccountId);
+      
     }
 }

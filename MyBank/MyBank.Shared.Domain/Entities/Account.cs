@@ -8,9 +8,6 @@ namespace MyBank.Shared.Domain.Entities
 {
     public class Account : EntityBase<Account>
     {
-
-    
-
         public int UserId { get; set; }
         public decimal Balance { get; set; }
         public int FinancialControlId { get; set; }

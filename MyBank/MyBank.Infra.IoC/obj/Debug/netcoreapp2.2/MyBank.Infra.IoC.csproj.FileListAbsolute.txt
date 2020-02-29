@@ -12,3 +12,16 @@ C:\Labs\DotNet\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Inf
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Infra.IoC\bin\Debug\netcoreapp2.2\MyBank.Infra.IoC.pdb
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Infra.IoC.dll
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Infra.IoC.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\bin\Debug\netcoreapp2.2\MyBank.Infra.IoC.deps.json
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\bin\Debug\netcoreapp2.2\MyBank.Infra.IoC.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\bin\Debug\netcoreapp2.2\MyBank.Infra.IoC.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\bin\Debug\netcoreapp2.2\MyBank.Infra.Data.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\bin\Debug\netcoreapp2.2\MyBank.Infra.Data.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Infra.IoC.csprojAssemblyReference.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Infra.IoC.AssemblyInfoInputs.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Infra.IoC.AssemblyInfo.cs
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Infra.IoC.csproj.CopyComplete
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Infra.IoC.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Infra.IoC\obj\Debug\netcoreapp2.2\MyBank.Infra.IoC.pdb

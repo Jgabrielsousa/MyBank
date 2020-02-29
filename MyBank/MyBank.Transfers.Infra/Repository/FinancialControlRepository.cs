@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using MyBank.Shared.Domain.Entities;
 using MyBank.Transfers.Domain.Interfaces;
@@ -15,32 +16,57 @@ namespace MyBank.Transfers.Infra.Repository
        
         public FinancialControlRepository(TransfersDbContext context) : base(context)
         {
-            context.Add(new Account()
+            context.Add(new FinancialControl()
             {
                 Id = 1,
-                UserId = 1,
-                Balance = 100,
-                FinancialControlId = 1
+                Value = 100,
+                Type = "C",
+                AccountId = 1
             });
-            context.Add(new Account()
+            context.Add(new FinancialControl()
             {
                 Id = 2,
-                UserId = 2,
-                Balance = 200,
-                FinancialControlId = 2
+                Value = 100,
+                Type = "C",
+                AccountId = 1
             });
+            context.Add(new FinancialControl()
+            {
+                Id = 3,
+                Value = 50,
+                Type = "D",
+                AccountId = 1
+            });
+
             context.SaveChanges();
 
         }
 
         public void Credit(int value, int OriginAccountId, int DestinyAccountId)
         {
-            throw new NotImplementedException();
+            context.Add(new FinancialControl()
+            {
+                Id = 1,
+                Value = value,
+                Type = "C",
+                AccountId = OriginAccountId
+            });
+            context.SaveChanges();
         }
 
         public void Debt(int value, int OriginAccountId, int DestinyAccountId)
         {
-            throw new NotImplementedException();
+            //var account=   context.FinancialControls.Where(c => c.AccountId == accountId).FirstOrDefault();
+
+            context.Add(new FinancialControl()
+            {
+                Id = 1,
+                Value = value,
+                Type = "D",
+                AccountId = OriginAccountId
+            });
+
+            context.SaveChanges();
         }
     }
 }

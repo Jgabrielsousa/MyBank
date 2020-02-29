@@ -16,7 +16,7 @@ namespace MyBank.Shared.Domain.Entities
         public string Name { get; set; }
         public int AccountId { get; set; }
 
-        public ICollection<Account> Account { get; set; }
+        public ICollection<Account> Accounts { get; set; }
 
         public override bool Valid()
         {

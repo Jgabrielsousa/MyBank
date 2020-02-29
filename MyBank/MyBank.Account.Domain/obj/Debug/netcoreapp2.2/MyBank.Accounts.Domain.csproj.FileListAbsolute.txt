@@ -10,3 +10,14 @@ C:\Labs\DotNet\MyBank\MyBank\MyBank.Account.Domain\bin\Debug\netcoreapp2.2\MyBan
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Account.Domain\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.pdb
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Account.Domain\obj\Debug\netcoreapp2.2\MyBank.Accounts.Domain.csprojAssemblyReference.cache
 C:\Labs\DotNet\MyBank\MyBank\MyBank.Account.Domain\obj\Debug\netcoreapp2.2\MyBank.Accounts.Domain.csproj.CopyComplete
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\bin\Debug\netcoreapp2.2\MyBank.Accounts.Domain.deps.json
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\bin\Debug\netcoreapp2.2\MyBank.Accounts.Domain.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\bin\Debug\netcoreapp2.2\MyBank.Accounts.Domain.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\bin\Debug\netcoreapp2.2\MyBank.Shared.Domain.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\obj\Debug\netcoreapp2.2\MyBank.Accounts.Domain.csprojAssemblyReference.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\obj\Debug\netcoreapp2.2\MyBank.Accounts.Domain.AssemblyInfoInputs.cache
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\obj\Debug\netcoreapp2.2\MyBank.Accounts.Domain.AssemblyInfo.cs
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\obj\Debug\netcoreapp2.2\MyBank.Accounts.Domain.csproj.CopyComplete
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\obj\Debug\netcoreapp2.2\MyBank.Accounts.Domain.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Account.Domain\obj\Debug\netcoreapp2.2\MyBank.Accounts.Domain.pdb

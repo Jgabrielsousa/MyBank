@@ -1,5 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-
+using MyBank.Transfers.Domain.Interfaces;
+using MyBank.Transfers.Domain.Services;
+using MyBank.Transfers.Infra.Context;
+using MyBank.Transfers.Infra.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +15,9 @@ namespace MyBank.Transfers.Api
     {
         public static void RegisterServices(IServiceCollection services)
         {
-            //services.AddScoped<IAccountService, TransferService>();
-            //services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<TransfersDbContext>();
+            services.AddScoped<IFinancialControlService, FinancialControlService>();
+            services.AddScoped<IFinancialControlRepository, FinancialControlRepository>();
         }
     }
 }
