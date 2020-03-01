@@ -19,6 +19,7 @@ namespace MyBank.Accounts.Infra.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseInMemoryDatabase("InMemoryProviderMyBankAccount");
+            //optionsBuilder.EnableSensitiveDataLogging();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -28,6 +29,10 @@ namespace MyBank.Accounts.Infra.Context
 
             modelBuilder.Entity<Account>().HasOne(c => c.Users).WithMany(q => q.Accounts);
             modelBuilder.Entity<FinancialControl>().HasOne(c => c.Accounts).WithMany(q => q.FinancialControl);
+
+
+           
+           
 
         }
         public DbSet<Account> Accounts { get; set; }

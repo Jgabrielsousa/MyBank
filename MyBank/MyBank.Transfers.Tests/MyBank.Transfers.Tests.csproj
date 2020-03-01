@@ -17,6 +17,7 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MyBank.Infra.IoC\MyBank.Infra.IoC.csproj" />
     <ProjectReference Include="..\MyBank.Transfers.Api\MyBank.Transfers.Api.csproj" />
   </ItemGroup>
 </Project>

@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MyBank.Infra.IoC;
 
 namespace MyBank.Accounts.Api
 {
@@ -26,13 +27,9 @@ namespace MyBank.Accounts.Api
         public void ConfigureServices(IServiceCollection services)
         {
             Bootstrap.RegisterServices(services);
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddMvc(option => option.EnableEndpointRouting = false);
-            //services.AddControllers(options =>
-            //{
-            //    options.RespectBrowserAcceptHeader = true; // false by default
-            //});
-            //services.AddControllers().AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -18,6 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyBank.Accounts.Api\MyBank.Accounts.Api.csproj" />
+    <ProjectReference Include="..\MyBank.Infra.IoC\MyBank.Infra.IoC.csproj" />
   </ItemGroup>
   
 

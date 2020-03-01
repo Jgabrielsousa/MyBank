@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using MyBank.Accounts.Api;
+using MyBank.Infra.IoC;
+//using MyBank.Accounts.Api;
 using System;
 using System.Collections.Generic;
 using System.Text;

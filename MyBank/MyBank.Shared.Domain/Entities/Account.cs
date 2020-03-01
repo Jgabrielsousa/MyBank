@@ -10,7 +10,6 @@ namespace MyBank.Shared.Domain.Entities
     {
         public int UserId { get; set; }
         public decimal Balance { get; set; }
-        public int FinancialControlId { get; set; }
 
         public User Users { get; set; }
         public ICollection<FinancialControl> FinancialControl { get; set; }

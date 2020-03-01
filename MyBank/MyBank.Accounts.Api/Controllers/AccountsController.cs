@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyBank.Accounts.Domain.Dtos;
 using MyBank.Accounts.Domain.Interfaces.Services;
-using MyBank.Infra.CrossCutting;
 using MyBank.Shared.Domain.Entities;
 
 namespace MyBank.Accounts.Api.Controllers

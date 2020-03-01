@@ -2297,6 +2297,36 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "MyBank.Accounts.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "MyBank.Infra.CrossCutting": "1.0.0",
+          "MyBank.Shared.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBank.Accounts.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBank.Accounts.Domain.dll": {}
+        }
+      },
+      "MyBank.Accounts.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "FluentValidation": "8.6.1",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.2",
+          "MyBank.Accounts.Domain": "1.0.0",
+          "MyBank.Shared.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBank.Accounts.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBank.Accounts.Infra.dll": {}
+        }
+      },
       "MyBank.Infra.CrossCutting/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -2305,6 +2335,41 @@
         },
         "runtime": {
           "bin/placeholder/MyBank.Infra.CrossCutting.dll": {}
+        }
+      },
+      "MyBank.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.2",
+          "MyBank.Shared.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBank.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBank.Infra.Data.dll": {}
+        }
+      },
+      "MyBank.Infra.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.Extensions.Configuration": "3.1.2",
+          "Microsoft.Extensions.DependencyInjection": "3.1.2",
+          "MyBank.Accounts.Domain": "1.0.0",
+          "MyBank.Accounts.Infra": "1.0.0",
+          "MyBank.Infra.Data": "1.0.0",
+          "MyBank.Shared.Domain": "1.0.0",
+          "MyBank.Transfers.Domain": "1.0.0",
+          "MyBank.Transfers.Infra": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBank.Infra.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBank.Infra.IoC.dll": {}
         }
       },
       "MyBank.Shared.Domain/1.0.0": {
@@ -2325,6 +2390,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "MyBank.Infra.IoC": "1.0.0",
           "MyBank.Transfers.Domain": "1.0.0",
           "MyBank.Transfers.Infra": "1.0.0"
         },
@@ -2342,6 +2408,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "MyBank.Accounts.Domain": "1.0.0",
           "MyBank.Infra.CrossCutting": "1.0.0",
           "MyBank.Shared.Domain": "1.0.0"
         },
@@ -7470,10 +7537,30 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "MyBank.Accounts.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MyBank.Account.Domain/MyBank.Accounts.Domain.csproj",
+      "msbuildProject": "../MyBank.Account.Domain/MyBank.Accounts.Domain.csproj"
+    },
+    "MyBank.Accounts.Infra/1.0.0": {
+      "type": "project",
+      "path": "../MyBank.Account.Infra/MyBank.Accounts.Infra.csproj",
+      "msbuildProject": "../MyBank.Account.Infra/MyBank.Accounts.Infra.csproj"
+    },
     "MyBank.Infra.CrossCutting/1.0.0": {
       "type": "project",
       "path": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj",
       "msbuildProject": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj"
+    },
+    "MyBank.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../MyBank.Infra.Data/MyBank.Infra.Data.csproj",
+      "msbuildProject": "../MyBank.Infra.Data/MyBank.Infra.Data.csproj"
+    },
+    "MyBank.Infra.IoC/1.0.0": {
+      "type": "project",
+      "path": "../MyBank.Infra.IoC/MyBank.Infra.IoC.csproj",
+      "msbuildProject": "../MyBank.Infra.IoC/MyBank.Infra.IoC.csproj"
     },
     "MyBank.Shared.Domain/1.0.0": {
       "type": "project",
@@ -7502,6 +7589,7 @@
       "Microsoft.Extensions.Configuration >= 3.1.2",
       "Microsoft.Extensions.DependencyInjection >= 3.1.2",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
+      "MyBank.Infra.IoC >= 1.0.0",
       "MyBank.Transfers.Api >= 1.0.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
@@ -7540,6 +7628,9 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
+            "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj": {
+              "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.IoC\\MyBank.Infra.IoC.csproj"
+            },
             "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Transfers.Api\\MyBank.Transfers.Api.csproj": {
               "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Transfers.Api\\MyBank.Transfers.Api.csproj"
             }

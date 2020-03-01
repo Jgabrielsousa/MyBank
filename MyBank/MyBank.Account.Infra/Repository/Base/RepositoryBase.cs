@@ -11,26 +11,29 @@ namespace MyBank.Accounts.Infra.Repository.Base
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : EntityBase<T>
     {
-        protected readonly AccountDbContext contexto;
+        protected readonly AccountDbContext context;
         protected DbSet<T> DbSet;
 
 
         public RepositoryBase(AccountDbContext _contexto)
         {
-            contexto = _contexto;
-            DbSet = contexto.Set<T>();
+            context = _contexto;
+            DbSet = context.Set<T>();
         }
 
 
         public virtual T Add(T entidade)
         {
             DbSet.Add(entidade);
+            context.SaveChanges();
             return entidade;
         }
 
         public virtual void Remove(T entidade)
         {
             DbSet.Remove(entidade);
+            context.SaveChanges();
+
         }
 
         public virtual T Find(long id)
@@ -45,10 +48,15 @@ namespace MyBank.Accounts.Infra.Repository.Base
 
         public virtual void Update(T entidade)
         {
+            //Litle trick because I am using EF InMemory 
+            //DbSet.Remove(entidade);
+            //DbSet.Add(entidade);
             DbSet.Update(entidade);
+            context.SaveChanges();
         }
 
         public virtual void Dispose()
-        { }
+        {
+        }
     }
 }

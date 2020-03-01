@@ -263,6 +263,20 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
+      "MyBank.Accounts.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "MyBank.Infra.CrossCutting": "1.0.0",
+          "MyBank.Shared.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBank.Accounts.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBank.Accounts.Domain.dll": {}
+        }
+      },
       "MyBank.Infra.CrossCutting/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -291,6 +305,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "MyBank.Accounts.Domain": "1.0.0",
           "MyBank.Infra.CrossCutting": "1.0.0",
           "MyBank.Shared.Domain": "1.0.0"
         },
@@ -788,6 +803,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MyBank.Accounts.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MyBank.Account.Domain/MyBank.Accounts.Domain.csproj",
+      "msbuildProject": "../MyBank.Account.Domain/MyBank.Accounts.Domain.csproj"
     },
     "MyBank.Infra.CrossCutting/1.0.0": {
       "type": "project",

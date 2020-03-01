@@ -9,72 +9,53 @@ using MyBank.Transfers.Infra.Repository.Base;
 
 namespace MyBank.Transfers.Infra.Repository
 {
-    
+
 
     public class FinancialControlRepository : RepositoryBase<FinancialControl>, IFinancialControlRepository
     {
-       
+
         public FinancialControlRepository(TransfersDbContext context) : base(context)
         {
 
-            try
-            {
-                context.Add(new FinancialControl()
-                {
-                    Id = 1,
-                    Value = 100,
-                    Type = "C",
-                    AccountId = 1
-                });
-                context.Add(new FinancialControl()
-                {
-                    Id = 2,
-                    Value = 100,
-                    Type = "C",
-                    AccountId = 1
-                });
-                context.Add(new FinancialControl()
-                {
-                    Id = 3,
-                    Value = 50,
-                    Type = "D",
-                    AccountId = 1
-                });
 
-                context.SaveChanges();
-            }
-            catch (Exception)
-            {
-            }
-            
+
 
         }
 
-        public void Credit(int value, int OriginAccountId, int DestinyAccountId)
+        public void Credit(decimal balance,  decimal amount, int fromAccountId, int toAccountId)
         {
+            var id = newId();
             context.Add(new FinancialControl()
             {
-                Id = 1,
-                Value = value,
+                Id = id,
+                Amount = amount,
+                Balance = balance,
                 Type = "C",
-                AccountId = OriginAccountId
+                AccountId = fromAccountId
             });
             context.SaveChanges();
         }
 
-        public void Debt(int value, int OriginAccountId, int DestinyAccountId)
+        public void Debt(decimal balance,  decimal amount, int fromAccountId, int toAccountId)
         {
-            //var account=   context.FinancialControls.Where(c => c.AccountId == accountId).FirstOrDefault();
-
+            var id = newId();
             context.Add(new FinancialControl()
             {
-                Id = 1,
-                Value = value,
+                Id = id,
+                Amount = amount,
+                Balance = balance,
                 Type = "D",
-                AccountId = OriginAccountId
+                AccountId = fromAccountId
             });
 
             context.SaveChanges();
         }
+
+        public IEnumerable<FinancialControl> GetByAccountId(int accountId)
+        {
+            return context.FinancialControls.Where(c => c.AccountId == accountId);
+        }
+
+        private int newId() => (context.FinancialControls.LastOrDefault()==null? 1: context.FinancialControls.LastOrDefault().Id + 1);
     }
 }

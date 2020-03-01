@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using MyBank.Infra.IoC;
 using MyBank.Transfers.Api;
 using System;
 using System.Collections.Generic;

@@ -25,12 +25,14 @@ namespace MyBank.Infra.Data.Repository.Base
         public virtual T Add(T entidade)
         {
             DbSet.Add(entidade);
+            context.SaveChanges();
             return entidade;
         }
 
         public virtual void Remove(T entidade)
         {
             DbSet.Remove(entidade);
+            context.SaveChanges();
         }
 
         public virtual T Find(long id)

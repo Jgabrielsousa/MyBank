@@ -23,6 +23,20 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "MyBank.Accounts.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "MyBank.Infra.CrossCutting": "1.0.0",
+          "MyBank.Shared.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBank.Accounts.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBank.Accounts.Domain.dll": {}
+        }
+      },
       "MyBank.Infra.CrossCutting/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -156,6 +170,11 @@
         "version.txt"
       ]
     },
+    "MyBank.Accounts.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MyBank.Account.Domain/MyBank.Accounts.Domain.csproj",
+      "msbuildProject": "../MyBank.Account.Domain/MyBank.Accounts.Domain.csproj"
+    },
     "MyBank.Infra.CrossCutting/1.0.0": {
       "type": "project",
       "path": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj",
@@ -169,6 +188,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "MyBank.Accounts.Domain >= 1.0.0",
       "MyBank.Infra.CrossCutting >= 1.0.0",
       "MyBank.Shared.Domain >= 1.0.0"
     ]
@@ -206,6 +226,9 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
+            "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Domain\\MyBank.Accounts.Domain.csproj": {
+              "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Domain\\MyBank.Accounts.Domain.csproj"
+            },
             "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.CrossCutting\\MyBank.Infra.CrossCutting.csproj": {
               "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.CrossCutting\\MyBank.Infra.CrossCutting.csproj"
             },

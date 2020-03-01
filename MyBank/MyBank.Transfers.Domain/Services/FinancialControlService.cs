@@ -1,4 +1,5 @@
-﻿using MyBank.Shared.Domain.Entities;
+﻿using MyBank.Accounts.Domain.Interfaces.Repository;
+using MyBank.Shared.Domain.Entities;
 using MyBank.Transfers.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -8,48 +9,62 @@ namespace MyBank.Transfers.Domain.Services
 {
     public class FinancialControlService : IFinancialControlService
     {
-        private readonly IFinancialControlRepository _repo;
-        public FinancialControlService(IFinancialControlRepository repo)
+        private readonly IFinancialControlRepository _repoFC;
+        private readonly IAccountRepository _repoAcc;
+
+        public FinancialControlService(IFinancialControlRepository repoFC, IAccountRepository repoAcc)
         {
-            _repo = repo;
+            _repoFC = repoFC;
+            _repoAcc = repoAcc;
         }
 
-        public void Credit(int value, int OriginAccountId, int DestinyAccountId)
+        public void Credit(TransferDto transfer)
         {
-            _repo.Credit(value, OriginAccountId, DestinyAccountId);
+            var toAccount = _repoAcc.Find(transfer.FromAccountId);
+            toAccount.Balance += transfer.Amount;
+            _repoAcc.Update(toAccount);
+            _repoFC.Credit(toAccount.Balance ,transfer.Amount, transfer.FromAccountId, transfer.ToAccountId);
         }
 
-        public void Debt(int value, int OriginAccountId, int DestinyAccountId)
+        public void Debt(TransferDto transfer)
         {
-            _repo.Debt(value, OriginAccountId, DestinyAccountId);
+            var fromAccount = _repoAcc.Find(transfer.FromAccountId);
+            fromAccount.Balance -= transfer.Amount;
+            _repoAcc.Update(fromAccount);
+            _repoFC.Debt(fromAccount.Balance ,transfer.Amount, transfer.FromAccountId, transfer.ToAccountId);
         }
         public FinancialControl Add(FinancialControl entidade)
         {
-            return _repo.Add(entidade);
+            return _repoFC.Add(entidade);
         }
 
         public FinancialControl Find(long id)
         {
-            return _repo.Find(id);
+            return _repoFC.Find(id);
         }
 
         public IEnumerable<FinancialControl> GetAll()
         {
-            return _repo.GetAll();
+            return _repoFC.GetAll();
         }
 
         public void Remove(FinancialControl entidade)
         {
-            _repo.Remove(entidade);
+            _repoFC.Remove(entidade);
         }
 
         public void Update(FinancialControl entidade)
         {
-            _repo.Update(entidade);
+            _repoFC.Update(entidade);
         }
         public void Dispose()
         {
 
+        }
+
+        public IEnumerable<FinancialControl> GetByAccountId(int id)
+        {
+            return _repoFC.GetByAccountId(id);
         }
     }
 }

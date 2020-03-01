@@ -8,7 +8,10 @@ namespace MyBank.Transfers.Domain.Interfaces
 {
     public interface IFinancialControlService : IServiceBase<FinancialControl>
     {
-        void Credit(int value, int OriginAccountId, int DestinyAccountId);
-        void Debt(int value, int OriginAccountId, int DestinyAccountId);
+        void Credit(TransferDto transfer);
+        void Debt(TransferDto transfer);
+
+        IEnumerable<FinancialControl> GetByAccountId(int accountId);
+
     }
 }

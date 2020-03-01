@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyBank.Infra.IoC\MyBank.Infra.IoC.csproj" />
     <ProjectReference Include="..\MyBank.Transfers.Domain\MyBank.Transfers.Domain.csproj" />
     <ProjectReference Include="..\MyBank.Transfers.Infra\MyBank.Transfers.Infra.csproj" />
   </ItemGroup>
