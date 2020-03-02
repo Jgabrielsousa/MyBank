@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "a91ed226-50d9-4fa1-aa6d-89f3589bcd95",
+		"name": "MyBank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllAccounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Accounts",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllTransfers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/Transfers/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"Transfers",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Amount\":10.5,\n\t\"FromAccountId\":1,\n\t\"ToAccountId\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4001/Transfers/Credit",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"Transfers",
+						"Credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Debit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Amount\":50,\n\t\"FromAccountId\":1,\n\t\"ToAccountId\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4001/Transfers/Debit",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"Transfers",
+						"Debit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByAccountId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/Transfers/GetByAccountId/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"Transfers",
+						"GetByAccountId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
