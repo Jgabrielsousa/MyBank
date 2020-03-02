@@ -48,13 +48,13 @@ namespace MyBank.Transfers.Api.Controllers
 
 
         [HttpPost("Credit")]
-        public IActionResult Credit([FromBody] TransferDto tranfer)
+        public async  Task<IActionResult> Credit([FromBody] TransferDto tranfer)
         {
             try
             {
-                var debitok = _service.Debt(tranfer);
+                var debitok = await  _service.Debt(tranfer);
                 if ((bool)debitok.Data) {
-                    return Ok(_service.Credit(tranfer));
+                    return Ok(await _service.Credit(tranfer));
                 }
                 return Ok(debitok);
             }

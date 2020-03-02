@@ -24,8 +24,7 @@ namespace MyBank.Accounts.Api.Controllers
         {
             try
             {
-                var itens = _service.GetAll();
-                return Ok(itens);
+                return Ok(_service.GetAll());
             }
             catch (Exception ex)
             {
@@ -33,18 +32,20 @@ namespace MyBank.Accounts.Api.Controllers
             }
         }
 
-        //// GET api/values/5
-        //[HttpGet("{id}")]
-        //public ActionResult<string> Get(int id)
-        //{
-        //    return "value";
-        //}
+        // GET api/values/5
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            return Ok(_service.Find(id));
+        }
 
         //// POST api/values
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
+        [HttpPost("{id}/{amount}")]
+        public IActionResult Post(int id, decimal amount)
+        {
+            _service.UpdateAmount(id, amount);
+            return Ok();
+        }
 
         //// PUT api/values/5
         //[HttpPut("{id}")]

@@ -213,3 +213,4 @@ C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\M
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll

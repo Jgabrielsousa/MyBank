@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MyBank.Account.Domain\MyBank.Accounts.Domain.csproj" />
     <ProjectReference Include="..\MyBank.Infra.CrossCutting\MyBank.Infra.CrossCutting.csproj" />
     <ProjectReference Include="..\MyBank.Shared.Domain\MyBank.Shared.Domain.csproj" />

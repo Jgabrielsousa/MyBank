@@ -9,6 +9,6 @@ namespace MyBank.Accounts.Domain.Interfaces.Services
 {
     public interface IAccountService : IServiceBase<Account>
     {
-        IEnumerable<AccountDto> GetAllDto();
+        void UpdateAmount(int accountId, decimal amount);
     }
 }

@@ -46,13 +46,23 @@ namespace MyBank.Accounts.Domain.Services
 
         }
 
-        public IEnumerable<AccountDto> GetAllDto()
+       
+
+        public void UpdateAmount(int accountId, decimal amount)
         {
-            var lista = new List<AccountDto>();
-            lista.Add(new AccountDto() { Balance = 1, FinancialControlId = 1, UserId = 1 });
-            lista.Add(new AccountDto() { Balance = 2, FinancialControlId = 2, UserId = 2 });
-            lista.Add(new AccountDto() { Balance = 3, FinancialControlId = 3, UserId = 3 });
-            return lista;
+            try
+            {
+                var item = _repo.Find(accountId);
+                item.Balance = amount;
+                _repo.Update(item);
+            }
+            catch (Exception erro)
+            {
+
+                throw erro;
+            }
+            
+
         }
     }
 }
