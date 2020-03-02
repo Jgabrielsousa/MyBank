@@ -1,8 +1,8 @@
 # 1
 
-1-É uma padrão de projetos voltado ao domínio focado nas regras de negócio que aux., geralmente usado para projetos complexos e com necessidade evolutiva considerável. 
+1-É uma padrão de projetos voltado ao domínio focado nas regras de negócio, geralmente usado para projetos complexos e com necessidade evolutiva considerável. 
 
-Em um cenário onde a regra de negócio é o core e está sempre em evolução essa abordagem é a mais recomendada por aderir ao negócio trabalhando as regras do negócio no domínio da aplicação. 
+Em um cenário onde a regra de negócio é o core ele é um dos pattern mais recomendados por aderir ao negócio trabalhando as regras e no domínio da aplicação. 
 
  
 
