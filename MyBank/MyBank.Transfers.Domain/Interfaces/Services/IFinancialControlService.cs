@@ -1,4 +1,5 @@
-﻿using MyBank.Shared.Domain.Entities;
+﻿using MyBank.Infra.CrossCutting;
+using MyBank.Shared.Domain.Entities;
 using MyBank.Shared.Domain.Interfaces.IServices.Base;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,8 @@ namespace MyBank.Transfers.Domain.Interfaces
 {
     public interface IFinancialControlService : IServiceBase<FinancialControl>
     {
-        void Credit(TransferDto transfer);
-        void Debt(TransferDto transfer);
+        RequestResult Credit(TransferDto transfer);
+        RequestResult Debt(TransferDto transfer);
 
         IEnumerable<FinancialControl> GetByAccountId(int accountId);
 

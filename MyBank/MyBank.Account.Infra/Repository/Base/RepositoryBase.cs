@@ -38,7 +38,8 @@ namespace MyBank.Accounts.Infra.Repository.Base
 
         public virtual T Find(long id)
         {
-            return DbSet.AsNoTracking().FirstOrDefault(x => x.Id == id);
+            //context.SaveChanges();
+            return DbSet.FirstOrDefault(x => x.Id == id);
         }
 
         public virtual IEnumerable<T> GetAll()
@@ -48,9 +49,6 @@ namespace MyBank.Accounts.Infra.Repository.Base
 
         public virtual void Update(T entidade)
         {
-            //Litle trick because I am using EF InMemory 
-            //DbSet.Remove(entidade);
-            //DbSet.Add(entidade);
             DbSet.Update(entidade);
             context.SaveChanges();
         }

@@ -26,7 +26,7 @@ namespace MyBank.Infra.IoC
             services.AddScoped<IUserService,UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
 
-            services.AddTransient<AccountDbContext>();
+            services.AddSingleton<AccountDbContext>();
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<IAccountRepository, AccountRepository>();
 

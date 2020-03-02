@@ -13,8 +13,6 @@ namespace MyBank.Transfers.Api.Controllers
     [Route("[controller]")]
     public class TransfersController : ControllerBase
     {
-
-
         private readonly IFinancialControlService _service;
         public TransfersController(IFinancialControlService service)
         {
@@ -27,8 +25,7 @@ namespace MyBank.Transfers.Api.Controllers
         {
             try
             {
-                var itens = _service.GetAll();
-                return Ok(itens);
+                return Ok(_service.GetAll());
             }
             catch (Exception ex)
             {
@@ -41,8 +38,7 @@ namespace MyBank.Transfers.Api.Controllers
         {
             try
             {
-                var itens = _service.GetByAccountId(id);
-                return Ok(itens);
+                return Ok(_service.GetByAccountId(id));
             }
             catch (Exception ex)
             {
@@ -56,27 +52,16 @@ namespace MyBank.Transfers.Api.Controllers
         {
             try
             {
-                _service.Credit(tranfer);
-                return Ok();
+                var debitok = _service.Debt(tranfer);
+                if ((bool)debitok.Data) {
+                    return Ok(_service.Credit(tranfer));
+                }
+                return Ok(debitok);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
-        [HttpPost("Debit")]
-        public IActionResult Debit([FromBody] TransferDto tranfer)
-        {
-            try
-            {
-                _service.Debt(tranfer);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
     }
 }

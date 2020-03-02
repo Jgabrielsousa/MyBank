@@ -13,34 +13,31 @@ namespace MyBank.Accounts.Infra.Repository
     {
         public AccountRepository(AccountDbContext context) : base(context)
         {
-            try
-            {
-                if (!context.Accounts.Any())
-                {
-
-                    context.Add(new Account()
-                    {
-                        Id = 1,
-                        UserId = 1,
-                        Balance = 100
-                    });
-                    context.Add(new Account()
-                    {
-                        Id = 2,
-                        UserId = 2,
-                        Balance = 200
-                    });
-                    context.SaveChanges();
-                }
-            }
-            catch (Exception)
-            {
-
-                
-            }
-            
+          
         }
 
-       
+        //public void LoadAddData() {
+
+        //    var id = newId();
+        //        context.Add(new Account()
+        //        {
+        //            Id = id ,
+        //            UserId = 1,
+        //            Balance = 100
+        //        });                context.Add(new Account()
+        //        {
+        //            Id = ++id,
+        //            UserId = 2,
+        //            Balance = 200
+        //        });
+        //        context.SaveChanges();
+
+            
+           
+        //}
+
+        private int newId() => (context.Accounts.LastOrDefault() == null ? 1 : context.Accounts.LastOrDefault().Id + 1);
+
+
     }
 }
