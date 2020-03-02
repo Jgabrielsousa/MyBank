@@ -9,10 +9,7 @@ namespace MyBank.Accounts.Infra.Context
 {
     public class AccountDbContext : DbContext
     {
-        public AccountDbContext(DbContextOptions options) : base(options)
-        {
-
-        }
+        public AccountDbContext(DbContextOptions options) : base(options){}
         public AccountDbContext()
         {
             if (!this.Accounts.Any()) {
@@ -30,7 +27,6 @@ namespace MyBank.Accounts.Infra.Context
                 });
                 this.SaveChanges();
             }
-          
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

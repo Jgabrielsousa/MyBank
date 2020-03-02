@@ -15,11 +15,7 @@ namespace MyBank.Transfers.Infra.Repository
     {
 
         public FinancialControlRepository(TransfersDbContext context) : base(context)
-        {
-
-
-
-
+        { 
         }
 
         public void Credit(decimal balance,  decimal amount, int fromAccountId, int toAccountId)
