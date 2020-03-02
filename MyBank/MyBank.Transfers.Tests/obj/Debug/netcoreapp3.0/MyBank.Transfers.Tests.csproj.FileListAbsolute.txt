@@ -137,3 +137,11 @@ C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\obj\Debug\netcoreapp3.0\
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\obj\Debug\netcoreapp3.0\MyBank.Transfers.Tests.csproj.CopyComplete
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\obj\Debug\netcoreapp3.0\MyBank.Transfers.Tests.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\obj\Debug\netcoreapp3.0\MyBank.Transfers.Tests.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll

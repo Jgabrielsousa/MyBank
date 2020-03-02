@@ -210,3 +210,6 @@ C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\M
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.csproj.CopyComplete
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\obj\Debug\netcoreapp3.0\MyBank.Accounts.Tests.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll

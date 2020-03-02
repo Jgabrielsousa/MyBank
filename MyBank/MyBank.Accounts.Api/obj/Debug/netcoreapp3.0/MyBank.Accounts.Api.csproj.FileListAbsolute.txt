@@ -121,10 +121,15 @@ C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\MyB
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\MyBank.Transfers.Domain.pdb
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\MyBank.Transfers.Infra.pdb
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.csprojAssemblyReference.cache
-C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.AssemblyInfoInputs.cache
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.AssemblyInfo.cs
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.RazorTargetAssemblyInfo.cache
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.csproj.CopyComplete
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.pdb
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\playground\labs\MyBank\MyBank\MyBank.Accounts.Api\obj\Debug\netcoreapp3.0\MyBank.Accounts.Api.MvcApplicationPartsAssemblyInfo.cache

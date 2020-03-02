@@ -20,7 +20,7 @@
     "MyBank.Transfers.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "Transfers",
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
