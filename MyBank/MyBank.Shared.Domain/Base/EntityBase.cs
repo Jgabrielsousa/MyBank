@@ -11,12 +11,6 @@ namespace MyBank.Shared.Domain.Base
     {
         public int Id { get; set; }
 
-        [NotMapped]
-        public ValidationResult ValidationResult { get; protected set; }
-        public EntityBase()
-        {
-            ValidationResult = new ValidationResult();
-        }
         public abstract bool Valid();
 
     }

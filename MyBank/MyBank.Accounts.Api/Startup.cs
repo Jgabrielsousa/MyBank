@@ -27,8 +27,7 @@ namespace MyBank.Accounts.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            Bootstrap.RegisterServices(services);
-
+            services.RegisterServicesAccount();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddSwaggerGen(options =>
@@ -36,7 +35,7 @@ namespace MyBank.Accounts.Api
                 options.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "My Bank",
+                        Title = "My Bank Account",
                         Version = "v1",
                         Description = "My Bank Project  Account API ASP.Net Core"
                     });
@@ -70,7 +69,7 @@ namespace MyBank.Accounts.Api
 
             app.UseSwagger();
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Bank API");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Bank API Account");
             });
 
         }

@@ -1,8 +1,6 @@
-﻿using MyBank.Shared.Domain.Entities;
-using MyBank.Shared.Domain.Interfaces.IRepository.Base;
-using System;
+﻿using MyBank.Shared.Domain.Interfaces.IRepository.Base;
+using MyBank.Transfers.Domain.Entities;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MyBank.Transfers.Domain.Interfaces
 {

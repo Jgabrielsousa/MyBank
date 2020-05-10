@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MyBank.Accounts.Domain.Entities;
 using MyBank.Shared.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -37,9 +38,6 @@ namespace MyBank.Accounts.Infra.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>().HasKey(c => c.Id);
-            modelBuilder.Entity<FinancialControl>().HasKey(c => c.Id);
-            modelBuilder.Entity<Account>().HasOne(c => c.Users).WithMany(q => q.Accounts);
-            modelBuilder.Entity<FinancialControl>().HasOne(c => c.Accounts).WithMany(q => q.FinancialControl);
 
         }
         public DbSet<Account> Accounts { get; set; }

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using MyBank.Shared.Domain.Entities;
+﻿using MyBank.Transfers.Domain.Entities;
 using MyBank.Transfers.Domain.Interfaces;
 using MyBank.Transfers.Infra.Context;
 using MyBank.Transfers.Infra.Repository.Base;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MyBank.Transfers.Infra.Repository
 {

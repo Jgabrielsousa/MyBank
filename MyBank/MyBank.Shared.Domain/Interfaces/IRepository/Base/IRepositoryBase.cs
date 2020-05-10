@@ -4,7 +4,8 @@ using System.Text;
 
 namespace MyBank.Shared.Domain.Interfaces.IRepository.Base
 {
-    public interface IRepositoryBase<T> : IDisposable
+    public interface IRepositoryBase<T> : IDisposable 
+        //where T : class
     {
         T Add(T entidade);
         void Remove(T entidade);

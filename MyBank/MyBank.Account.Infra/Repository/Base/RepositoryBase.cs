@@ -22,6 +22,8 @@ namespace MyBank.Accounts.Infra.Repository.Base
         }
 
 
+
+
         public virtual T Add(T entidade)
         {
             DbSet.Add(entidade);
@@ -33,12 +35,10 @@ namespace MyBank.Accounts.Infra.Repository.Base
         {
             DbSet.Remove(entidade);
             context.SaveChanges();
-
         }
 
         public virtual T Find(long id)
         {
-            //context.SaveChanges();
             return DbSet.FirstOrDefault(x => x.Id == id);
         }
 
@@ -54,7 +54,6 @@ namespace MyBank.Accounts.Infra.Repository.Base
         }
 
         public virtual void Dispose()
-        {
-        }
+        { }
     }
 }

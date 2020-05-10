@@ -29,14 +29,14 @@ namespace MyBank.Transfers.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            Bootstrap.RegisterServices(services);
+            services.RegisterServicesTransfers();
 
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "My Bank",
+                        Title = "My Bank Transfers",
                         Version = "v1",
                         Description = "My Bank Project  Transfers API ASP.Net Core"
                     });
@@ -64,7 +64,7 @@ namespace MyBank.Transfers.Api
 
             app.UseSwagger();
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Bank API");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Bank API Transfers");
             });
         }
     }

@@ -1,9 +1,7 @@
 ﻿using MyBank.Infra.CrossCutting;
-using MyBank.Shared.Domain.Entities;
 using MyBank.Shared.Domain.Interfaces.IServices.Base;
-using System;
+using MyBank.Transfers.Domain.Entities;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MyBank.Transfers.Domain.Interfaces

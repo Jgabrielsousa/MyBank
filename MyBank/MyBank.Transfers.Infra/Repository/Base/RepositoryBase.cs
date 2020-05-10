@@ -9,7 +9,8 @@ using System.Text;
 
 namespace MyBank.Transfers.Infra.Repository.Base
 {
-    public class RepositoryBase<T> : IRepositoryBase<T> where T : EntityBase<T>
+    public class RepositoryBase<T> : IRepositoryBase<T>
+        where T : EntityBase<T>
     {
         protected readonly TransfersDbContext context;
         protected DbSet<T> DbSet;
@@ -22,33 +23,38 @@ namespace MyBank.Transfers.Infra.Repository.Base
         }
 
 
-        public virtual T Add(T entidade)
+        public T Add(T entidade)
         {
             DbSet.Add(entidade);
+            context.SaveChanges();
             return entidade;
         }
 
-        public virtual void Remove(T entidade)
+        
+
+        public T Find(long id)
         {
-            DbSet.Remove(entidade);
+            return DbSet.FirstOrDefault(x => x.Id == id);
         }
 
-        public virtual T Find(long id)
-        {
-            return DbSet.AsNoTracking().FirstOrDefault(x => x.Id == id);
-        }
-
-        public virtual IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll()
         {
             return DbSet.AsNoTracking();
         }
 
-        public virtual void Update(T entidade)
+        public  void Update(T entidade)
         {
             DbSet.Update(entidade);
+            context.SaveChanges();
         }
 
-        public virtual void Dispose()
+        public  void Dispose()
         { }
+
+        public void Remove(T entidade)
+        {
+            DbSet.Remove(entidade);
+            context.SaveChanges();
+        }
     }
 }

@@ -1,87 +1,145 @@
+using Moq;
+using MyBank.Transfers.Domain.Entities;
 using MyBank.Transfers.Domain.Interfaces;
-using MyBank.Transfers.Tests.Injector;
+using MyBank.Transfers.Domain.Services;
 using System;
+using System.Collections.Generic;
 using Xunit;
-using Microsoft.Extensions.DependencyInjection;
-using MyBank.Shared.Domain.Entities;
 
 namespace MyBank.Transfers.Tests
 {
-    public class FinancialTest : IClassFixture<InjectorDependencies>
+    public class FinancialTest
     {
-        private readonly IFinancialControlService _service;
-        public FinancialTest(InjectorDependencies injector)
-        {
-            _service = injector.ServiceProvider.GetService<IFinancialControlService>();
-        }
+        private readonly Mock<IFinancialControlRepository> _repo = new Mock<IFinancialControlRepository>();
+        
 
+        private FinancialControlService GetMock(Mock<IFinancialControlRepository> _repo) =>  new FinancialControlService(_repo.Object);
+            
+       
         [Fact]
-        public void GetAllFinancialControls()
+        public void GetOneFinancialControl()
         {
-            var items = _service.GetAll();
-            Assert.NotNull(items);
-        }
+            var item = GetItem();
 
-        [Fact]
-        public void GetOneFinancialControls()
-        {
-            var item = _service.Add(new FinancialControl()
-            {
-                Id = 1,
-                Amount = 100,
-                Balance = 100,
-                Type = "C",
-                AccountId = 1
-            });
 
-            var ItemFound = _service.Find(item.Id);
+            //RETURNS
+            _repo.Setup(c => c.Add(It.IsAny<FinancialControl>())).Returns(item);
+            _repo.Setup(c => c.Find(It.IsAny<long>())).Returns(item);
+
+            //MOCKS
+            var mock = GetMock(_repo);
+            //ACT
+            var expected = mock.Add(item);
+            var ItemFound = mock.Find(item.Id);
+            //VALIDATIONS
             Assert.NotNull(ItemFound);
+        }
+
+        [Fact]
+        public void GetAllFinancialControl()
+        {
+            //BUILD RETURNS
+            var items = GetList();
+            //SETUPS
+            _repo.Setup(c => c.GetAll()).Returns(items);
+            //MOCKS
+            var mock = GetMock(_repo);
+            //ACT
+            var expected = mock.GetAll();
+            //VALIDATIONS
+            Assert.NotNull(expected);
+            Assert.Equal(expected,items);
         }
 
         [Fact]
         public void AddFinancialControl()
         {
-            var item = _service.Add(new FinancialControl()
-            {
-                Id = 1,
-                Amount = 100,
-                Balance = 100,
-                Type = "C",
-                AccountId = 1
-            });
-            Assert.NotNull(item);
+            //BUILD RETURNS
+            var item = GetItem();
+            //SETUPS
+            _repo.Setup(c => c.Find(It.IsAny<long>())).Returns(() => item);
+            _repo.Setup(c => c.Add(It.IsAny<FinancialControl>())).Returns(item);
+            //MOCKS
+            var mock = GetMock(_repo);
+            //ACT
+            var expected = mock.Add(item);
+            var ItemFound = mock.Find(item.Id);
+            //VALIDATIONS
+            Assert.NotNull(ItemFound);
+            Assert.Equal(expected, ItemFound);
         }
         [Fact]
         public void UpdateFinancialControl()
         {
-            var item = _service.Add(new FinancialControl()
-            {
-                Id = 1,
-                Amount = 100,
-                Balance = 100,
-                Type = "C",
-                AccountId = 1
-            });
-            var itemFound = _service.Find(item.Id);
-            itemFound.Type = "D";
-             _service.Update(itemFound);
-            Assert.NotNull(item);
+            //BUILD RETURNS
+            var item = GetItem();
+            //SETUPS
+            _repo.Setup(c => c.Add(It.IsAny<FinancialControl>())).Returns(item);
+            _repo.Setup(c => c.Find(It.IsAny<long>())).Returns(() => item);
+            _repo.Setup(c => c.Update(It.IsAny<FinancialControl>()));
+
+            //MOCKS
+            var mock = GetMock(_repo);
+            //ACT
+            mock.Add(item);
+            var itemFound = mock.Find(item.Id);
+            itemFound.Amount = 1000;
+            mock.Update(item);
+            var expected = mock.Find(item.Id);
+            //VALIDATIONS
+            Assert.NotNull(expected);
+            Assert.Equal(expected.Amount, itemFound.Amount);
         }
 
         [Fact]
         public void RemoveFinancialControl()
         {
-            var item = _service.Add(new FinancialControl()
-            {
-                Id = 1,
-                Amount = 100,
-                Balance = 100,
-                Type = "C",
-                AccountId = 1
-            });
-            var itemFound = _service.Find(item.Id);
-            _service.Remove(itemFound);
-            Assert.NotNull(item);
+            //BUILD RETURNS
+            var item = GetItem();
+            //SETUPS
+            _repo.Setup(c => c.Add(It.IsAny<FinancialControl>())).Returns(item);
+            _repo.SetupSequence(c => c.Find(It.IsAny<long>())).Returns(item).Returns(() => null);
+            _repo.Setup(c => c.Remove(It.IsAny<FinancialControl>()));
+
+            //MOCKS
+            var mock = GetMock(_repo);
+            //ACT
+            mock.Add(item);
+            var itemFound = mock.Find(item.Id);
+            mock.Remove(itemFound);
+            var expected = mock.Find(itemFound.Id);
+            //VALIDATIONS
+            Assert.Null(expected);
         }
+
+        private int GetRandomNumber() => new Random().Next(1, 100);
+
+
+        private FinancialControl GetItem() => new FinancialControl()
+        {
+            Id = GetRandomNumber(),
+            Amount = 100,
+            Balance = 100,
+            Type = "C",
+            AccountId = 1
+        };
+
+        private List<FinancialControl> GetList() => new List<FinancialControl>() { 
+        
+            new FinancialControl{
+            Id = GetRandomNumber(),
+            Amount = 100,
+            Balance = 100,
+            Type = "C",
+            AccountId = 1
+        },
+             new FinancialControl{
+            Id = GetRandomNumber(),
+            Amount = 100,
+            Balance = 100,
+            Type = "C",
+            AccountId = 1
+        }
+        };
     }
 }

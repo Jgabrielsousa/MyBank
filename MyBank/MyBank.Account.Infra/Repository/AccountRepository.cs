@@ -1,4 +1,5 @@
-﻿using MyBank.Accounts.Domain.Interfaces.Repository;
+﻿using MyBank.Accounts.Domain.Entities;
+using MyBank.Accounts.Domain.Interfaces.Repository;
 using MyBank.Accounts.Infra.Context;
 using MyBank.Accounts.Infra.Repository.Base;
 using MyBank.Shared.Domain.Entities;
@@ -16,27 +17,7 @@ namespace MyBank.Accounts.Infra.Repository
           
         }
 
-        //public void LoadAddData() {
-
-        //    var id = newId();
-        //        context.Add(new Account()
-        //        {
-        //            Id = id ,
-        //            UserId = 1,
-        //            Balance = 100
-        //        });                context.Add(new Account()
-        //        {
-        //            Id = ++id,
-        //            UserId = 2,
-        //            Balance = 200
-        //        });
-        //        context.SaveChanges();
-
-            
-           
-        //}
-
-        private int newId() => (context.Accounts.LastOrDefault() == null ? 1 : context.Accounts.LastOrDefault().Id + 1);
+        private int newId() => (context.Accounts.LastOrDefault() == null ? 1 : context.Accounts.LastOrDefault().Id + 1); 
 
 
     }

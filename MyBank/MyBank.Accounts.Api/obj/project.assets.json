@@ -2474,20 +2474,6 @@
           "bin/placeholder/MyBank.Infra.CrossCutting.dll": {}
         }
       },
-      "MyBank.Infra.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "3.1.2",
-          "MyBank.Shared.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MyBank.Infra.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MyBank.Infra.Data.dll": {}
-        }
-      },
       "MyBank.Infra.IoC/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -2497,7 +2483,6 @@
           "Microsoft.Extensions.DependencyInjection": "3.1.2",
           "MyBank.Accounts.Domain": "1.0.0",
           "MyBank.Accounts.Infra": "1.0.0",
-          "MyBank.Infra.Data": "1.0.0",
           "MyBank.Shared.Domain": "1.0.0",
           "MyBank.Transfers.Domain": "1.0.0",
           "MyBank.Transfers.Infra": "1.0.0"
@@ -7655,11 +7640,6 @@
       "path": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj",
       "msbuildProject": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj"
     },
-    "MyBank.Infra.Data/1.0.0": {
-      "type": "project",
-      "path": "../MyBank.Infra.Data/MyBank.Infra.Data.csproj",
-      "msbuildProject": "../MyBank.Infra.Data/MyBank.Infra.Data.csproj"
-    },
     "MyBank.Infra.IoC/1.0.0": {
       "type": "project",
       "path": "../MyBank.Infra.IoC/MyBank.Infra.IoC.csproj",
@@ -7724,6 +7704,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://10.1.11.110/Superdigital/_packaging/Package-Superdigital/nuget/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

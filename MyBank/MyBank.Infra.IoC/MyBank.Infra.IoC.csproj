@@ -12,7 +12,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MyBank.Account.Domain\MyBank.Accounts.Domain.csproj" />
     <ProjectReference Include="..\MyBank.Account.Infra\MyBank.Accounts.Infra.csproj" />
-    <ProjectReference Include="..\MyBank.Infra.Data\MyBank.Infra.Data.csproj" />
     <ProjectReference Include="..\MyBank.Shared.Domain\MyBank.Shared.Domain.csproj" />
     <ProjectReference Include="..\MyBank.Transfers.Domain\MyBank.Transfers.Domain.csproj" />
     <ProjectReference Include="..\MyBank.Transfers.Infra\MyBank.Transfers.Infra.csproj" />

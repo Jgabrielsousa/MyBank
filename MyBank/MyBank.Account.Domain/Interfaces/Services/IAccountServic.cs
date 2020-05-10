@@ -1,9 +1,5 @@
-﻿using MyBank.Accounts.Domain.Dtos;
-using MyBank.Shared.Domain.Entities;
+﻿using MyBank.Accounts.Domain.Entities;
 using MyBank.Shared.Domain.Interfaces.IServices.Base;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MyBank.Accounts.Domain.Interfaces.Services
 {

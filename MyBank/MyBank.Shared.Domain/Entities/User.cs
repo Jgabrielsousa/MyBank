@@ -8,25 +8,15 @@ namespace MyBank.Shared.Domain.Entities
 {
     public class User : EntityBase<User>
     {
-        public User(string name)
-        {
+        public string Name { get; private set; }
+        public string Cpf { get; private set; }
+
+        public User(string name, string cpf) {
             this.Name = name;
-        }
+            this.Cpf = cpf;
+        } 
 
-        public string Name { get; set; }
-        public int AccountId { get; set; }
-
-        public ICollection<Account> Accounts { get; set; }
-
-        public override bool Valid()
-        {
-            //RuleFor(x => x.Name)
-            //     .NotEmpty().WithMessage("Nome precisa ser fornecido ")
-            //     .Length(4, 200).WithMessage("Nome precisa ter entre 4 e 200 caracteres");
-            //ValidationResult = Validate(this);
-            //return ValidationResult.IsValid;
-            return true;
-
-        }
+        public override bool Valid() =>  (!string.IsNullOrEmpty(this.Name) && !string.IsNullOrEmpty(this.Name));
+       
     }
 }

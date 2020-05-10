@@ -1,22 +1,21 @@
 ﻿using MyBank.Accounts.Domain.Dtos;
-using MyBank.Accounts.Domain.Interfaces.Repository;
 using MyBank.Infra.CrossCutting;
-using MyBank.Shared.Domain.Entities;
+using MyBank.Shared.Domain.Services.Base;
+using MyBank.Transfers.Domain.Entities;
 using MyBank.Transfers.Domain.Interfaces;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MyBank.Transfers.Domain.Services
 {
-    public class FinancialControlService : IFinancialControlService
+    public class FinancialControlService : ServiceBase<FinancialControl> , IFinancialControlService
     {
         private readonly IFinancialControlRepository _repoFC;
 
-        public FinancialControlService(IFinancialControlRepository repoFC)
+        public FinancialControlService(IFinancialControlRepository repoFC):base(repoFC)
         {
             _repoFC = repoFC;
         }
@@ -27,7 +26,7 @@ namespace MyBank.Transfers.Domain.Services
             {
                 var toAccount = await GetAccount(transfer.ToAccountId);
                 toAccount.Balance += transfer.Amount;
-                await UpdateAccount(toAccount.Id, toAccount.Balance);
+                await UpdateAccountQueue(toAccount.Id, toAccount.Balance);
                 //NOTIFICA USUARIO DO CREDITATO
                 _repoFC.Credit(toAccount.Balance, transfer.Amount, transfer.ToAccountId, transfer.FromAccountId);
 
@@ -50,7 +49,7 @@ namespace MyBank.Transfers.Domain.Services
                     return new RequestResult() { Data = false, Mensagens = new List<string>() { "Saldo insuficiente para a transferencia" }, Status = StatusMensagem.Ok };
 
                 fromAccount.Balance -= transfer.Amount;
-                await UpdateAccount(fromAccount.Id, fromAccount.Balance);
+                await UpdateAccountQueue(fromAccount.Id, fromAccount.Balance);
                 //NOTIFICA USUARIO DO DEBITADO 
                 _repoFC.Debt(fromAccount.Balance, transfer.Amount, transfer.FromAccountId, transfer.ToAccountId);
                 return new RequestResult() { Data = true, Mensagens = new List<string>() { "Debito realizado com sucesso" }, Status = StatusMensagem.Ok };
@@ -61,42 +60,14 @@ namespace MyBank.Transfers.Domain.Services
             }
 
         }
-        public FinancialControl Add(FinancialControl entidade)
-        {
-            return _repoFC.Add(entidade);
-        }
-
-        public FinancialControl Find(long id)
-        {
-            return _repoFC.Find(id);
-        }
-
-        public IEnumerable<FinancialControl> GetAll()
-        {
-            return _repoFC.GetAll();
-        }
-
-        public void Remove(FinancialControl entidade)
-        {
-            _repoFC.Remove(entidade);
-        }
-
-        public void Update(FinancialControl entidade)
-        {
-            _repoFC.Update(entidade);
-        }
-        public void Dispose()
-        {
-
-        }
-
+        
+        
         public IEnumerable<FinancialControl> GetByAccountId(int id)
         {
             return _repoFC.GetByAccountId(id);
         }
 
-       
-        public async Task<AccountDto> GetAccount(int accountId)
+        private async Task<AccountDto> GetAccount(int accountId)
         {
             AccountDto account = null;
             try
@@ -121,11 +92,11 @@ namespace MyBank.Transfers.Domain.Services
             }
             catch (Exception ex)
             {
+                throw ex;
             }
-            return account;
         }
 
-        public async Task<bool> UpdateAccount(int accountId, decimal amount)
+        private async Task<bool> UpdateAccountQueue(int accountId, decimal amount)
         {
             
             try
@@ -139,8 +110,8 @@ namespace MyBank.Transfers.Domain.Services
             }
             catch (Exception ex)
             {
+                throw ex;
             }
-            return false;
         }
     }
 }

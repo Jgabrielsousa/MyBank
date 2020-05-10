@@ -145,3 +145,5 @@ C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Castle.Core.dll
+C:\playground\labs\MyBank\MyBank\MyBank.Transfers.Tests\bin\Debug\netcoreapp3.0\Moq.dll

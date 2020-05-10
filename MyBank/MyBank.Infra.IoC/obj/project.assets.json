@@ -406,20 +406,6 @@
           "bin/placeholder/MyBank.Infra.CrossCutting.dll": {}
         }
       },
-      "MyBank.Infra.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "3.1.2",
-          "MyBank.Shared.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MyBank.Infra.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MyBank.Infra.Data.dll": {}
-        }
-      },
       "MyBank.Shared.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -1125,11 +1111,6 @@
       "path": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj",
       "msbuildProject": "../MyBank.Infra.CrossCutting/MyBank.Infra.CrossCutting.csproj"
     },
-    "MyBank.Infra.Data/1.0.0": {
-      "type": "project",
-      "path": "../MyBank.Infra.Data/MyBank.Infra.Data.csproj",
-      "msbuildProject": "../MyBank.Infra.Data/MyBank.Infra.Data.csproj"
-    },
     "MyBank.Shared.Domain/1.0.0": {
       "type": "project",
       "path": "../MyBank.Shared.Domain/MyBank.Shared.Domain.csproj",
@@ -1153,7 +1134,6 @@
       "Microsoft.Extensions.DependencyInjection >= 3.1.2",
       "MyBank.Accounts.Domain >= 1.0.0",
       "MyBank.Accounts.Infra >= 1.0.0",
-      "MyBank.Infra.Data >= 1.0.0",
       "MyBank.Shared.Domain >= 1.0.0",
       "MyBank.Transfers.Domain >= 1.0.0",
       "MyBank.Transfers.Infra >= 1.0.0"
@@ -1187,6 +1167,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://10.1.11.110/Superdigital/_packaging/Package-Superdigital/nuget/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1197,9 +1178,6 @@
             },
             "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Infra\\MyBank.Accounts.Infra.csproj": {
               "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Account.Infra\\MyBank.Accounts.Infra.csproj"
-            },
-            "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj": {
-              "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Infra.Data\\MyBank.Infra.Data.csproj"
             },
             "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj": {
               "projectPath": "C:\\playground\\labs\\MyBank\\MyBank\\MyBank.Shared.Domain\\MyBank.Shared.Domain.csproj"
